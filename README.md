@@ -106,7 +106,7 @@ Hands-on practice quest #00: prerequisites sound-check (15+5)
 ``` 
 
 - [ ] When участники *именуют сценарии*, выполняют команды и анализируют их вывод и поведение
-- Сценарий "Как ...?"
+- Сценарий "Как вывести system info?"
 ```shell
 docker version # TODO: собственные пометки участников для будущего использования в проектах
 docker system info
@@ -115,7 +115,7 @@ docker system df
 docker events
 ```
 
-- Сценарий "Как ...?"
+- Сценарий "Как залогиниться в репозиторий?"
 (в новом ssh shell, чтобы параллельно видеть вывод `docker events`)
 ```shell
 docker logout
@@ -123,13 +123,13 @@ open https://hub.docker.com/settings/security # to make Access Token
 docker login -u {{ registry-account }} -p {{ access-token }} # login default hub.docker.com registry
 ```
 
-- Сценарий "Как ...?"
+- Сценарий "Как скачать имедж?"
 ```shell
 docker image pull alpine
 docker system df
 ````
 
-- Сценарий "Как ...?"
+- Сценарий "Как запустить контейнер?"
 ```shell
 docker container ls [--all]
 docker container run --name demo -it alpine
@@ -137,7 +137,7 @@ docker container run --name demo -it alpine
 /# exit 
 ```
 
-- Сценарий "Как ...?"
+- Сценарий "Как удалить контейнер?"
 ```shell
 docker container ls [--all]
 docker container rm [--force] demo
